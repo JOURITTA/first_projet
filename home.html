@@ -10,63 +10,80 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>home</title>
+    <!-- css externe -->
+    <link rel="stylesheet" href="style.css" />
+    <title>projet</title>
   </head>
   <body>
-    <header>
-      <!-- entête de la page -->
-      <img src="images/log.png" alt="logo" width="100" height="100" />
-      <h1>photographie culinaire by Joury</h1>
-      <figcaption>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-linkedin"></i>
-      </figcaption>
-      <nav>
-        <ul>
-          <!-- lien dans la même page -->
-          <li>
-            <i class="fa-solid fa-house"></i>&nbsp;&nbsp;<a href="">Home</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-user"></i>&nbsp;&nbsp;<a href="#tag_about"
-              >About</a
-            >
-          </li>
-          <li>
-            <i class="fa-regular fa-server"></i>&nbsp;&nbsp;<a href="#tag_work"
-              >Work</a
-            >
-          </li>
-          <li>
-            <i class="fa-solid fa-file"></i>&nbsp;&nbsp;<a href="#tag_resume"
-              >Resume</a
-            >
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<a href="#tag_cont"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <!-- image d'arriere plan -->
-        <img src="images/bg.jpg" alt="cuisine" width="1500" height="800" />
+    <nav>
+      <ul>
+        <li>
+          <img src="images/log.png" alt="logo" width="100" height="101" />
+        </li>
+        <br />
+        <!-- lien dans la même page -->
+        <li>
+          <a href=""><i class="fa-solid fa-house fa-2xl"> &nbsp;Home</i></a>
+        </li>
+        <li>
+          <a href="#tag_about"
+            ><i class="fa-solid fa-user fa-2xl">&nbsp;About</i></a
+          >
+        </li>
+        <li>
+          <a href="#tag_work">
+            <i class="fa-regular fa-server fa-2xl">&nbsp;Work</i>
+          </a>
+        </li>
+        <li>
+          <a href="#tag_resume">
+            <i class="fa-solid fa-file fa-2xl">&nbsp;Resume</i></a
+          >
+        </li>
+        <li>
+          <a href="#tag_cont">
+            <i class="fa-solid fa-envelope fa-2xl">&nbsp;Contact</i></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <header class="container">
+      <img
+        src="images/bg.jpg"
+        alt="Avatar"
+        class="image"
+        width="600 px"
+        height="600 px"
+      />
+      <div class="middle">
+        <div class="text">
+          <h1 id="titre">photographie culinaire by Joury</h1>
+          <br />
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="https://.com/"
+            ><i class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-instagram fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com/">
+            <i class="fa-brands fa-youtube fa-2xl"></i
+          ></a>
+          <a href="https://twitter.com/"
+            ><i class="fa-brands fa-linkedin fa-2xl"></i
+          ></a>
+        </div>
       </div>
     </header>
-    <section>
-      <h1>Joury</h1>
-      <p>I am photographie culinaire</p>
-    </section>
-    <section id="tag_about">
+    <section id="tag_about" class="about">
       <h1>About</h1>
 
       <!-- description de site -->
 
-      <p>
+      <p class="par">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio
         orci, lacinia ac dolor faucibus, consectetur pharetra nisl. Quisque
         pretium dapibus tempus. Vestibulum vel turpis in quam sollicitudin
@@ -87,7 +104,7 @@
       <table>
         <tr>
           <td>
-            <img src="images/bg.jpg" alt="cuisine" width="400" height="400" />
+            <img src="images/bg.jpg" alt="cuisine" style="width: 100%" />
           </td>
           <td>
             UI/UX Designer & Web Developer. Lorem ipsum dolor sit amet,
@@ -118,12 +135,37 @@
 
     <section id="tag_work">
       <h1>Work</h1>
-      <table>
+
+      <img src="images/img1.jpeg" width="400" height="500" />
+      <div class="pos1">
+        <i class="fa-solid fa-thumbs-up fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-thumbs-down fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-comment fa-2xl"></i>
+      </div>
+      <img src="images/img2.jpeg" width="400" height="500" />
+      <div class="pos2">
+        <i class="fa-solid fa-thumbs-up fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-thumbs-down fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-comment fa-2xl"></i>
+      </div>
+      <img src="images/img3.jpeg" width="400" height="500" />
+      <div class="pos3">
+        <i class="fa-solid fa-thumbs-up fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-thumbs-down fa-2xl"></i>&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-comment fa-2xl"></i>
+      </div>
+      <!--<table>
         <tr>
-          <!-- insertion des images -->
+          
           <td><img src="images/img1.jpeg" width="400" height="500" /></td>
           <td><img src="images/img2.jpeg" width="500" height="500" /></td>
           <td><img src="images/img3.jpeg" width="500" height="500" /></td>
+        </tr>
+        <tr>
+          <td><img src="images/img5.jpg" width="500" height="500" /></td>
+          <td><img src="images/img6.jpg" width="500" height="500" /></td>
+          <td><img src="images/img4.png" width="500" height="500" /></td>
+          <td><img src="images/img7.jpg" width="500" height="500" /></td>
         </tr>
         <tr>
           <td>
@@ -145,7 +187,7 @@
           </td>
         </tr>
       </table>
-      <!-- inseret un audio -->
+      inseret un audio -->
       <audio controls>
         <source src="test.mp3" type="audio/mpeg" />
         Please Check the audio Extension</audio
